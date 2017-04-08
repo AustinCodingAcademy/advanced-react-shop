@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar'
-
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 function App () {
     return (
       <div className="App">
@@ -180,17 +180,8 @@ function App () {
         </div>
 
     </div>
-   
-    <div className="container">
-        <hr/>
-        <footer>
-            <div className="row">
-                <div className="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
-    </div>
+   <Footer />
+
       </div>
     );
 }
