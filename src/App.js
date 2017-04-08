@@ -1,44 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar'
 
-class App extends Component {
-  render() {
+function App () {
     return (
       <div className="App">
-     
-    <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div className="container">
-          
-            <div className="navbar-header">
-                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span className="sr-only">Toggle navigation</span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                </button>
-                <a className="navbar-brand" href="#">Start Bootstrap</a>
-            </div>
-          
-            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul className="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-         
-        </div>
-      
-    </nav>
+      <NavBar />
 
- 
     <div className="container">
 
         <div className="row">
@@ -213,10 +182,7 @@ class App extends Component {
     </div>
    
     <div className="container">
-
         <hr/>
-
-      
         <footer>
             <div className="row">
                 <div className="col-lg-12">
@@ -224,11 +190,9 @@ class App extends Component {
                 </div>
             </div>
         </footer>
-
     </div>
       </div>
     );
-  }
 }
 
 export default App;
