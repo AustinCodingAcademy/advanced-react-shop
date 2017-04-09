@@ -5,7 +5,11 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import ProductDetail from './components/ProductDetail';
 import Carousel from './components/Carousel';
-function App () {
+function App (props) {
+
+    var products = props.state.products.map(function(){
+        return <ProductDetail />;
+    });
     return (
           <div className="App">
             <NavBar />
@@ -22,12 +26,7 @@ function App () {
                   <div className="col-md-9">
                       <Carousel />
                       <div className="row">
-                        <ProductDetail />
-                        <ProductDetail />
-                        <ProductDetail />
-                        <ProductDetail />
-                        <ProductDetail />
-                        <ProductDetail />
+                        {products}
                       </div>
                   </div>
               </div>
