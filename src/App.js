@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
-  render() {
+function App() {
     return (
       <div className="App">
      
@@ -228,7 +227,6 @@ class App extends Component {
     </div>
       </div>
     );
-  }
 }
 
 export default App;
