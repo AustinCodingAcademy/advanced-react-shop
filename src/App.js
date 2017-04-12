@@ -7,8 +7,8 @@ import ProductDetail from './components/ProductDetail';
 import Carousel from './components/Carousel';
 function App (props) {
 
-    var products = props.state.products.map(function(){
-        return <ProductDetail />;
+    var products = props.state.products.map(function(prod){
+        return <ProductDetail product={prod} />;
     });
     return (
           <div className="App">
