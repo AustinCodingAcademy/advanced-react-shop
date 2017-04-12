@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
  function ProductDetail(props){
-     var {name,description,rating} = props.product;
+     var {name,description,rating,price} = props.product;
      var stars = [];
      for(var i = 0; i< rating; i ++){
          stars.push(<span className="glyphicon glyphicon-star"></span>);
@@ -13,7 +13,7 @@ import React, { Component } from 'react';
                   <img src="http://placehold.it/320x150" alt=""/>
                   <div className="caption">
                        <h4><a href="#">{name}</a>
-                      <h4 className="pull-right">$24.99</h4>
+                      <h4 className="pull-right">{price}</h4>
                      
                       </h4>
                       <p>{description} 
